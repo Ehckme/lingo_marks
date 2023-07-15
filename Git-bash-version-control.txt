@@ -1,0 +1,18 @@
+1. cd into the disired working directory
+
+2. Once inside the desired directory tpye the command: ls -a
+This will list all the files and docs
+
+3. Type the following command: git status
+this is to view files that are in staging, which is a place for temporary placing before commiting.
+
+4. Type: git add <file name> 
+This will add the specified file name to staging. Its text color will be green to show that it is infact in staging.
+
+# Alternatively, you may use: git add .   to choose all the files or everything within the directory.  
+Notice the dot at the end of (git add .)
+
+5. Type the command: git commit -m "here goes the message that officializes the documentation, 
+this message is important" These messages should be in present tense as they serve as reminder.
+
+6. 
