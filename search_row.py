@@ -1,11 +1,11 @@
 import pandas
 
 
-if __name__ == "__main__":
-    # create a function to fetch data from xlsx file using the panda module
-    def import_excel_data():
-        excel_data = pandas.read_excel('marks.xlsx',
-                                       sheet_name='Sheet', )
+# create a function to fetch data from xlsx file using the panda module
+def import_excel_data():
+    excel_data = pandas.read_excel('marks.xlsx',
+                                   sheet_name='Sheet', )
+    try:
 
         #  create a searching variable named search_surname
         search_surname = str(input('Search surname: '))
@@ -18,6 +18,11 @@ if __name__ == "__main__":
         print(row_index)
 
         return query_var
+    except StopIteration as e:
+        print(e)
+        print("No search name or invalid entry ")
 
+
+if __name__ == "__main__":
 
     import_excel_data()

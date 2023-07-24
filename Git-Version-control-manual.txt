@@ -1,0 +1,53 @@
+1. cd into the disired working directory: it should be the current woking directory.
+
+2. Once inside the desired directory tpye the command: git init
+This comman will initialize the repository
+
+# Type: ls -a
+This will list and display all the files and docs
+
+3. Type the following command: git status
+this is to view files that are in staging, which is a place for temporary placing before commiting.
+
+4. Type: git add <file name> 
+This will add the specified file name to staging. Its text color will be green to show that it is infact in staging.
+
+# Alternatively, you may use: git add .   to choose all the files or everything within the directory.  
+Notice the dot at the end of (git add .)
+
+5. Type the command: git commit -m "here goes the message that officializes the documentation, 
+this message is important" These messages should be in present tense as they serve as reminders.
+
+6. Type the command: git log
+This command will show and display the committed files.
+The details of the commit consists of:
+
+* The hash number
+* The author
+* And commit date
+
+----------------------------------------------------------- Set remote Github repository from Github ------------------------------------------------------------
+
+7. Login or create an account with Github
+
+8. Once inside github, navigate to the plus sign that is at the far most top-right corner, and click it.
+On the drop down menu, select new repository.
+
+9. On the creaate new repository page: fill in the input textbox by giving your repository a new name.
+* The description is optional. 
+
+10. Once satisfied with the name, navigate down to the green button that says "create repository" 
+it is at the bottom of the page.
+
+11. On the new page: copy the [HTTPS | SSH] link to use on the command-line
+
+								--------Git Command-line--------
+
+------------------------------------------------------- Push to remote Github repository from commandline--------------------------------------------------
+
+12. Type the command: git remote add origin, followed by the copied link of HTTPS | SSH
+e.g git remote add origin https://github.com/Thabo/school_grades
+
+13. Finally Type the command: git push -u origin master
+
+* This will push the files to Github remote repository
